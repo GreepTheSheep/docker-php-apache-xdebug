@@ -6,7 +6,7 @@ Run xDebug on apache with php
 Run this command:
 
 ```bash
-docker pull docker.pkg.github.com/greepthesheep/docker-php-apache-xdebug/php-apache-xdebug:latest
+docker pull greep/php-apache-xdebug
 ```
 
 This will install php:apache and add xDebug config on it
@@ -25,7 +25,7 @@ This will install php:apache and add xDebug config on it
     "request": "launch",
     "port": 9000,
     "pathMappings": {
-        "/var/www/html": "${workspaceFolder}/page"
+        "/var/www/html": "${workspaceFolder}"
     },
     "xdebugSettings": {
         "max_data": 65535,
